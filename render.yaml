@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: news-app
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm run start
+    env:
+      - key: NEWSAPI_KEY
